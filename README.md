@@ -1,5 +1,5 @@
 # Scanner
-The project aim at create a TINY language compiler's scanner using python
+The project aim to create a TINY language compiler's scanner using python
 ### Tasks List
 1. [x] Implement the algorithm 
 2. [x] Design GUI
