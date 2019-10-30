@@ -7,17 +7,16 @@ import tkinter.scrolledtext as scrolledtext
 def submit():
   output.delete('1.0',END)
   input1 = textbox.get("1.0",END)
-  scanner(input1)
-  x = open("output.txt", "r")
-  output.insert(INSERT, x.read())
-
-def ex_fn():
-    quit()
+  x = scanner(input1)
+  #x = open("output.txt", "r")
+  output.insert(INSERT, x)
 
 def clear():
     textbox.delete('1.0',END)
     output.delete('1.0',END)
 
+def ex_fn():
+    window.destroy()
 
 def restart():
     output.delete('1.0',END)
@@ -36,6 +35,7 @@ textbox.place(x=20,y=30)
 
 Button(command = submit ,text ="Submit",bg='springgreen').place(x=615,y=675)
 Button(command = clear ,text ="Clear",bg='gray64').place(x=574,y=675)
+
 
 Label(window, text='Output', fg='black', bg='white', font=('comicsans', 14)).place(x=700,y=2)
 
