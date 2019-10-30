@@ -4,4 +4,4 @@ The project aim to create a TINY language compiler's scanner using python
 1. [x] Implement the algorithm 
 2. [x] Design GUI
 3. [x] Testing & fix bugs
-4. [ ] creat an exe file
+4. [x] creat an exe file
